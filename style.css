@@ -158,11 +158,13 @@
   }
 
 header {
-  margin-top: 30px;
+  margin-top: 50px;
+}
+
+.barcart{
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
 }
 
   form{
@@ -170,21 +172,25 @@ header {
   }
 
 .search{
-    width: 400px;
+    width: max-content;
     display: flex;
     float: none;
     align-items: center;
     padding: 14px;
     border-radius: 28px;
     background: #333232;
-    width: 800px;
+    width: 850px;
     transition: ease 0.5s;
     box-shadow: 0 0 5px 3px rgba(247, 244, 244, 0.5);
 }
 
+.search:hover{
+  width: 900px;
+}
+
 
 .search-input{
-    font-size: 24px;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     margin-left: 14px;
@@ -198,6 +204,10 @@ header {
 .material-symbols-outlined{
     padding-right: 5px;
     font-size: 30px;
+}
+
+.cart{
+  padding-left: 25px;
 }
 
 .cart-icon {
@@ -216,6 +226,12 @@ header {
 
 .logsign{
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  float: right;
+  position: relative;
+  top: -50px;
+  right: 15px;
 }
 
 .login{
@@ -341,3 +357,176 @@ main{
   height: 150px;
 }
 
+.about-title{
+  color: rgb(233, 230, 225);
+}
+
+.about-para{
+  color: rgb(233, 225, 220);
+}
+
+.products-category{
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.prod-panel h2{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.prod-panel a{
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  text-decoration: none;
+  padding:0;
+}
+
+.prod-panel a:hover{
+  text-decoration: underline;
+  color: gold;
+}
+
+.prod-list{
+  list-style: none;
+}
+
+li{
+  padding: 15px;
+}
+
+#mens-apparel, 
+#women-apparel,
+#mobile-gadgets,
+#womens-accessories,
+#mens-shoes,
+#motor,
+#audio,
+#games,
+#womens-shoes,
+#womens-bag,
+#pet-care,
+#mens-accessories,
+#groceries,
+#cameras {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.products h4{
+  font-size: 24px;
+  margin: 0;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: orangered;
+  background-color: white;
+  border-radius: 28px;
+  transition: ease-in-out 1s;
+}
+
+.products h4:hover{
+background-color: red;
+color: yellow;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 3px rgba(218, 211, 211, 0.2) inset;
+  padding: 15px;
+  background-color: #757373;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: rgb(156, 144, 128);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.card h3 {
+  font-size: 14px;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  
+}
+
+.fa-solid.fa-cart-plus{
+  padding-top: 25px;
+  padding-left: 5px;
+  padding-right: 30px;
+  font-size: 25px;
+}
+
+.card p {
+  padding: 0 10px 10px;
+  font-size: 16px;
+  color: #a53131;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align:right;
+  display: inline-block;
+}
+
+.contact{
+  display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card-contact {
+  width: 230px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5) inset;
+  color: white;
+  padding: 25px;
+  transition: transform 0.2s;
+}
+
+.card-contact:hover {
+  transform: scale(1.05);
+}
+
+.card-contact a{
+  text-decoration: none;
+  color: white;
+}
+
+
+footer{
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 10px 5px rgba(204, 198, 198, 0.5);
+  padding: 15px;
+}
+
+footer a{
+  text-decoration: none;
+  color: rgb(214, 151, 151);
+}
+
+footer a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
